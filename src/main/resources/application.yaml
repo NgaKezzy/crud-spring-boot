@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /testmysql
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test-mysql
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+    hibernate.ddl-auto: update
